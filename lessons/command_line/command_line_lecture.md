@@ -118,7 +118,7 @@ echo "HELLO WORLD" > test_file.txt
 Now nothing shows up on the screen. List the files and see if you can tell
 why.
 
-> Hint: we learned how to list all the files up above.
+> _instead of stdout the string "HELLO WORLD", this text is saved into test_file.txt_
 
 The greater than says, "put that output into the following file instead."
 
@@ -145,6 +145,9 @@ Nice.
 
 > Let's save the output of the `curl` command to a file called `data.txt`. How
 would we do that?
+>> '''bash
+curl https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data > data.txt
+```
 
 Now that we have the data file, let's learn how to manipulate files.
 
@@ -192,6 +195,7 @@ ls -lh
 ```
 
 > What changed?
+>> The format of file size is changed from number of bits to its abbreviation
 
 If instead copying we just want to change the name of a file, we can do:
 
